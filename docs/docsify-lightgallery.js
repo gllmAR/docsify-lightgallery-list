@@ -36,28 +36,3 @@ function lightGalleryPlugin(hook, vm) {
 window.$docsify = window.$docsify || {};
 window.$docsify.plugins = (window.$docsify.plugins || []).concat(lightGalleryPlugin);
 
-
-
-// docsify-lightgallery.js
-function lightGalleryWithMixedContent(hook, vm) {
-    hook.doneEach(function() {
-        var galleryElement = document.getElementById('gallery-mixed-content-demo');
-        if (galleryElement) {
-            lightGallery(galleryElement, {
-                selector: 'a',
-                plugins: [lgVideo],  // Use the video plugin
-                loadYoutubeThumbnail: true,
-                youtubeThumbSize: 'default',  // This is generally 'hqdefault' or 'maxresdefault'
-                loadVimeoThumbnail: true,
-                vimeoThumbSize: 'thumbnail_medium',  // Ensure this is correctly set
-                addClass: 'custom-lightgallery-class',  // For custom styling if needed
-                subHtmlSelectorRelative: true,
-                videojs: true  // Ensure you include Video.js if needed
-            });
-        }
-    });
-}
-
-// Add the plugin to Docsify's plugin array
-window.$docsify = window.$docsify || {};
-window.$docsify.plugins = (window.$docsify.plugins || []).concat(lightGalleryWithMixedContent);
