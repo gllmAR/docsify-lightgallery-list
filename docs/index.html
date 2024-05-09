@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
+
+  <!-- Replace with your own title and description. -->
+  <title>Awesome Docsify Site</title>
+  <meta name="description" content="An awesome docsify site for publishing some content on the web.">
+
+  <!-- Default Theme (see https://docsify.js.org/#/themes) -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+
+  <!-- Include LightGallery CSS -->
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery/css/lightgallery.min.css" />
+  
+  <!-- Include LightGallery Thumbnails CSS -->
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery/css/lg-thumbnail.min.css" />
+  
+<!-- Include Video.js if using videojs option in LightGallery -->
+<link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
+<script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <script>
+    // Docsify Configuration (see https://docsify.js.org/#/configuration)
+    window.$docsify = {
+      name: 'Simple Docsify Template',
+
+      // Sidebar Configuration
+      auto2top: true,
+      loadSidebar: true,
+      maxLevel: 0,
+      // Set subMaxLevel to 0 to remove automatic display of page table of contents (TOC) in Sidebar
+      subMaxLevel: 3,
+
+      // Search Plugin Configuration
+      search: {
+        placeholder: 'Type to search',
+        noData: 'No matches found.',
+        // Headline depth, 1 - 6
+        depth: 2,
+      }
+    };
+  </script>
+
+  <!-- Required -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+
+  <!-- Recommended -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
+
+  <!-- Include LightGallery JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery/lightgallery.min.js"></script>
+
+  <!-- Include  docsify-lightgallery.js -->
+  <script src="../docsify-lightgallery.js"></script>
+
+
+</body>
+</html>
